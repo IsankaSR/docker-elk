@@ -66,6 +66,7 @@ services:
       LS_JAVA_OPTS: -Xms5120m -Xmx5120m
       LS_HEAP_SIZE: 5g
       LOGSTASH_INTERNAL_PASSWORD: ${LOGSTASH_INTERNAL_PASSWORD:-}
+      ELASTIC_PASSWORD: ${ELASTIC_PASSWORD:-}
     networks:
       - elk
     depends_on:
